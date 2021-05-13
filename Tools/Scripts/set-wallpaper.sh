@@ -16,6 +16,7 @@ TARGET_LOCK_FILE="${PICTURES_DIRECTORY}/lock.png"
 
 if [ ! -f "${WALLPAPER}" ]; then
 	echo "${WALLPAPER} does not exist. Exiting"
+	exit 1
 fi
 
 magick "${WALLPAPER}" "${TARGET_WALLPAPER_FILE}"

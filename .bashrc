@@ -42,3 +42,10 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dotfiles config status.showUntrackedFiles no
 
 export GPG_TTY=$(tty)
+
+
+export GEM_HOME=$HOME/.gem/ruby/3.0.0/
+export IDEA_JDK=/home/caco3/.jbr/jbrsdk_jcef-11_0_15-linux-x64-b2043.56/
+
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
